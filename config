@@ -49,7 +49,7 @@ bind -n C-Up resize-pane -U 5
 
 set -g status-bg '#7c6f64'
 set -g status-fg '#3c3836'
-set -g pane-active-border-style fg='#b8bb26',bg=default
+set -g pane-active-border-style fg='#ff00ff',bg=default
 set -g pane-border-style fg="#7c6f64"
 
 set-option -g default-terminal "screen-256color"
