@@ -6,6 +6,10 @@ set-window-option -g mode-keys vi
 bind -T copy-mode-vi y send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
 bind -T copy-mode-vi v send -X begin-selection
 
+# Start windows and panes at 1, not 0
+set -g base-index 1
+setw -g pane-base-index 1
+
 # Bindings
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 bind-key s split-window -c '#{pane_current_path}'
