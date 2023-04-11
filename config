@@ -51,8 +51,8 @@ bind -n C-Right resize-pane -R 10
 bind -n C-Down resize-pane -D 5
 bind -n C-Up resize-pane -U 5
 
-set -g status-bg '#0074A0'
-set -g status-fg '#ffffff'
+set -g status-bg '#77A7CF'
+set -g status-fg '#222222'
 set -g pane-active-border-style fg='#ffee00',bg=default
 set -g pane-border-style fg="#7c6f64"
 
