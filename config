@@ -61,4 +61,5 @@ set-option -g status-left-length 50
 set-option -g status-right " #(date +'%m-%d-%y %I:%M %P') "
 set -sg escape-time 0
 
-set -g mouse on
+set -g @tmux_power_theme '#77A7CF'
+run-shell "/Users/russell.murray/programs/tmux-power/tmux-power.tmux"
