@@ -26,6 +26,10 @@ bind-key w kill-window
 bind-key S-Tab previous-window
 bind-key n new-window -c '#{pane_current_path}'
 bind-key m resize-pane -Z
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
  
 # Smart pane switching with awareness of Vim splits.
 # See: https://github.com/christoomey/vim-tmux-navigator
