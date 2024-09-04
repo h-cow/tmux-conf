@@ -71,7 +71,7 @@ set -g @tmux_power_theme '#77A7CF'
 set -g @tmux_power_date_icon ' ' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon ' ' # emoji can be used if your terminal supports
 set -g @tmux_power_user_icon ' '
-set -g @tmux_power_session_icon ''
+set -g @tmux_power_session_icon '󰆍'
 set -g @tmux_power_upload_speed_icon '↑'
 set -g @tmux_power_download_speed_icon '↓'
 
