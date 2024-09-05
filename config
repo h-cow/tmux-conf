@@ -79,7 +79,7 @@ set -g @tmux_power_download_speed_icon '↓'
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'wfxr/tmux-power'
+set -g @plugin 'MouseZero/tmux-power-blue-white'
 
 # Other examples:
 # set -g @plugin 'github_username/plugin_name'
