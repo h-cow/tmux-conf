@@ -4,6 +4,7 @@
 # ln -s ~/.config/tmux/config ~/.tmux.conf
 # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+# Change you're terminal blue to `77a4c1`
 
 unbind C-b
 set -g prefix C-s
