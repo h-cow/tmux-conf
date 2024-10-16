@@ -53,6 +53,11 @@ bind-key -T copy-mode-vi 'C-k' select-pane -U
 bind-key -T copy-mode-vi 'C-l' select-pane -R
 bind-key -T copy-mode-vi 'C-\' select-pane -l
 
+# Different color non active frame
+set -g focus-events on
+set-hook -g pane-focus-out 'select-pane -P bg=#222222,fg=#77a4c1'
+set-hook -g pane-focus-in 'select-pane -P bg=default,fg=default'
+
 # resize pane shortcuts
 bind -r H resize-pane -L 10
 bind -r J resize-pane -D 10
