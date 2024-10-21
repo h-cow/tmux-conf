@@ -64,9 +64,9 @@ bind -r J resize-pane -D 10
 bind -r K resize-pane -U 10
 bind -r L resize-pane -R 10
 
-set -g status-bg '#77a4c1'
+set -g status-bg '#87AFD7'
 set -g status-fg '#222222'
-set -g pane-active-border-style fg='#77a4c1',bg=default
+set -g pane-active-border-style fg='#87AFD7',bg=default
 set -g pane-border-style fg="#7c6f64"
 
 set-option -g default-terminal "screen-256color"
@@ -74,7 +74,7 @@ set-option -g status-left-length 50
 set-option -g status-right " #(date +'%m-%d-%y %I:%M %P') "
 set -sg escape-time 0
 
-set -g @tmux_power_theme '#77a4c1'
+set -g @tmux_power_theme '#87AFD7'
 set -g @tmux_power_date_icon ' ' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon ' ' # emoji can be used if your terminal supports
 set -g @tmux_power_user_icon ' '
