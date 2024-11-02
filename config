@@ -23,17 +23,16 @@ setw -g pane-base-index 1
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 bind-key s split-window -c '#{pane_current_path}'
 bind-key v split-window -h -c '#{pane_current_path}'
-bind-key Tab next-window
 bind-key w kill-window
-bind-key S-Tab previous-window
 bind-key n new-window -c '#{pane_current_path}'
 bind-key m resize-pane -Z
 bind-key h select-pane -L
 bind-key j select-pane -D
 bind-key k select-pane -U
 bind-key l select-pane -R
-bind-key t switch-client -t wiki # Todo Session
-bind-key p switch-client -l # Previous Session
+bind-key N switch-client -t wiki # Todo Session
+bind-key Tab switch-client -l # Previous Session
+bind-key f split-window -h "tmuxsession || exit"
 
  
 # Smart pane switching with awareness of Vim splits.
