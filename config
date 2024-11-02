@@ -24,13 +24,13 @@ bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 bind-key s split-window -c '#{pane_current_path}'
 bind-key v split-window -h -c '#{pane_current_path}'
 bind-key w split-window -h "tmuxsession kill || exit"
-bind-key n new-window -c '#{pane_current_path}'
+bind-key N new-window -c '#{pane_current_path}'
 bind-key m resize-pane -Z
 bind-key h select-pane -L
 bind-key j select-pane -D
 bind-key k select-pane -U
 bind-key l select-pane -R
-bind-key N switch-client -t wiki # Todo Session
+bind-key n switch-client -t wiki # Todo Session
 bind-key Tab switch-client -l # Previous Session
 bind-key f split-window -h "tmuxsession opened || exit"
 bind-key F split-window -h "tmuxsession || exit"
