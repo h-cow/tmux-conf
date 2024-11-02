@@ -32,6 +32,9 @@ bind-key h select-pane -L
 bind-key j select-pane -D
 bind-key k select-pane -U
 bind-key l select-pane -R
+bind-key t switch-client -t wiki # Todo Session
+bind-key p switch-client -l # Previous Session
+
  
 # Smart pane switching with awareness of Vim splits.
 # See: https://github.com/christoomey/vim-tmux-navigator
