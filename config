@@ -33,7 +33,7 @@ bind-key l select-pane -R
 bind-key N switch-client -t wiki # Todo Session
 bind-key Tab switch-client -l # Previous Session
 bind-key f split-window -h "tmuxsession || exit"
-
+bind-key z split-window -c '#{pane_current_path}' \; resize-pane -D 600 \; resize-pane -U 8
  
 # Smart pane switching with awareness of Vim splits.
 # See: https://github.com/christoomey/vim-tmux-navigator
