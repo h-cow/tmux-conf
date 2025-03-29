@@ -5,10 +5,11 @@
 # git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 # Change you're terminal blue to `77a4c1`
+# For midnight color `799faa`
 
 unbind C-b
 set -g prefix C-s
-set -g mouse on
+set -g mouse off
 
 set-option -g history-limit 100000
 set-window-option -g mode-keys vi
@@ -35,8 +36,8 @@ bind-key k select-pane -U
 bind-key l select-pane -R
 bind-key n switch-client -t wiki # Todo Session
 bind-key Tab switch-client -l # Previous Session
-bind-key f split-window -h "tmuxsession opened || exit"
-bind-key F split-window -h "tmuxsession || exit"
+bind-key f split-window -h "bash \"$HOME/bin/tmuxsession\" opened || exit"
+bind-key F split-window -h "bash \"$HOME/bin/tmuxsession\" || exit"
 bind-key z split-window -c '#{pane_current_path}' \; resize-pane -D 600 \; resize-pane -U 8
  
 # Smart pane switching with awareness of Vim splits.
@@ -80,7 +81,7 @@ set-option -g status-left-length 50
 set-option -g status-right " #(date +'%m-%d-%y %I:%M %P') "
 set -sg escape-time 0
 
-set -g @tmux_power_theme '#87AFD7'
+set -g @tmux_power_theme '#7795AB'
 set -g @tmux_power_date_icon ' ' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon ' ' # emoji can be used if your terminal supports
 set -g @tmux_power_user_icon ' '
@@ -91,7 +92,7 @@ set -g @tmux_power_download_speed_icon '↓'
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
-set -g @plugin 'MouseZero/tmux-power-blue-white'
+set -g @plugin 'h-cow/tmux-power-blue-white'
 
 # Other examples:
 # set -g @plugin 'github_username/plugin_name'
