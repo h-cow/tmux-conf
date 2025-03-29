@@ -81,7 +81,7 @@ set-option -g status-left-length 50
 set-option -g status-right " #(date +'%m-%d-%y %I:%M %P') "
 set -sg escape-time 0
 
-set -g @tmux_power_theme '#7795AB'
+set -g @tmux_power_theme '#777777'
 set -g @tmux_power_date_icon ' ' # set it to a blank will disable the icon
 set -g @tmux_power_time_icon ' ' # emoji can be used if your terminal supports
 set -g @tmux_power_user_icon ' '
