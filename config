@@ -97,3 +97,5 @@ set -g @plugin 'tmux-plugins/tmux-battery'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
+set -g pane-border-lines heavy
+set -g pane-border-style fg=colour232
