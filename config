@@ -41,8 +41,9 @@ set -g prefix C-s
 set -g mouse off
 
 set-window-option -g mode-keys vi
-bind -T copy-mode-vi y send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
-bind -T copy-mode-vi v send -X begin-selection
+#bind -T copy-mode-vi y send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
+#bind -T copy-mode-vi v send -X begin-selection
+set -s set-clipboard on
 
 # Start windows and panes at 1, not 0
 set -g base-index 1
